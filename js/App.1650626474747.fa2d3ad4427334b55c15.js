@@ -89,7 +89,7 @@ document.getElementById('root').classList.add('tasks');var isChrome2 = ( true &&
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".1650560495848." + __webpack_require__.h() + ".js";
+/******/ 			return "js/" + chunkId + ".1650626474747." + __webpack_require__.h() + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -98,13 +98,13 @@ document.getElementById('root').classList.add('tasks');var isChrome2 = ( true &&
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + chunkId + "." + {"src_bootstrap-dev_js-node_modules_redhat-cloud-services_frontend-components-notifications_Not-cb1284":"85f4f81233a1b5b94419","SamplePage":"1611b5f2c8e850988bce"}[chunkId] + ".css";
+/******/ 			return "css/" + chunkId + "." + {"src_bootstrap-dev_js-node_modules_redhat-cloud-services_frontend-components-notifications_Not-cb1284":"85f4f81233a1b5b94419","TasksPage":"1611b5f2c8e850988bce"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("2b42d35b74088575e460")
+/******/ 		__webpack_require__.h = () => ("fa2d3ad4427334b55c15")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -494,7 +494,7 @@ document.getElementById('root').classList.add('tasks');var isChrome2 = ( true &&
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"src_bootstrap-dev_js-node_modules_redhat-cloud-services_frontend-components-notifications_Not-cb1284":1,"SamplePage":1};
+/******/ 			var cssChunks = {"src_bootstrap-dev_js-node_modules_redhat-cloud-services_frontend-components-notifications_Not-cb1284":1,"TasksPage":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -608,4 +608,4 @@ document.getElementById('root').classList.add('tasks');var isChrome2 = ( true &&
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=../sourcemaps/App.947b42852a89f3576119ff48cca31030.js.map
+//# sourceMappingURL=../sourcemaps/App.118c010e2f7fe27d3176a5705e9aa52d.js.map

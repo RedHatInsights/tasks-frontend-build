@@ -1,4 +1,4 @@
-(self["webpackChunktasks_frontend"] = self["webpackChunktasks_frontend"] || []).push([["SamplePage"],{
+(self["webpackChunktasks_frontend"] = self["webpackChunktasks_frontend"] || []).push([["TasksPage"],{
 
 /***/ "./node_modules/@redhat-cloud-services/frontend-components/esm/Dark/DarkContext.js":
 /*!*****************************************************************************************!*\
@@ -572,4 +572,4 @@ function _slicedToArray(arr, i) {
 /***/ })
 
 }]);
-//# sourceMappingURL=../sourcemaps/SamplePage.0970f519fcee7d1de2482b6ebd2df373.js.map
+//# sourceMappingURL=../sourcemaps/TasksPage.b14ed84598a6f6de16ab90a76909aeff.js.map
