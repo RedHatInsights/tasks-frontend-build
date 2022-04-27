@@ -312,11 +312,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AvailableTasks = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.lazy)(function () {
-  return __webpack_require__.e(/*! import() */ "src_SmartComponents_AvailableTasks_AvailableTasks_js").then(__webpack_require__.bind(__webpack_require__, /*! ../AvailableTasks/AvailableTasks */ "./src/SmartComponents/AvailableTasks/AvailableTasks.js"));
+var AvailableTasksTable = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.lazy)(function () {
+  return __webpack_require__.e(/*! import() */ "src_PresentationalComponents_AvailableTasksTable_AvailableTasksTable_js").then(__webpack_require__.bind(__webpack_require__, /*! ../../PresentationalComponents/AvailableTasksTable/AvailableTasksTable */ "./src/PresentationalComponents/AvailableTasksTable/AvailableTasksTable.js"));
 });
-var CompletedTasks = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.lazy)(function () {
-  return __webpack_require__.e(/*! import() */ "src_SmartComponents_CompletedTasks_CompletedTasks_js").then(__webpack_require__.bind(__webpack_require__, /*! ../CompletedTasks/CompletedTasks */ "./src/SmartComponents/CompletedTasks/CompletedTasks.js"));
+var CompletedTasksTable = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_1__.lazy)(function () {
+  return __webpack_require__.e(/*! import() */ "src_PresentationalComponents_CompletedTasksTable_CompletedTasksTable_js").then(__webpack_require__.bind(__webpack_require__, /*! ../../PresentationalComponents/CompletedTasksTable/CompletedTasksTable */ "./src/PresentationalComponents/CompletedTasksTable/CompletedTasksTable.js"));
 });
 
 
@@ -341,7 +341,7 @@ var TasksPage = function TasksPage() {
     hasGutter: true
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_patternfly_react_core__WEBPACK_IMPORTED_MODULE_2__.StackItem, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react__WEBPACK_IMPORTED_MODULE_1__.Suspense, {
     fallback: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_patternfly_react_core__WEBPACK_IMPORTED_MODULE_2__.Spinner, null)
-  }, tabIndex === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(AvailableTasks, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(CompletedTasks, null))))));
+  }, tabIndex === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(AvailableTasksTable, null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(CompletedTasksTable, null))))));
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TasksPage);
@@ -357,8 +357,12 @@ var TasksPage = function TasksPage() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "TASKS_API_ROOT": () => (/* binding */ TASKS_API_ROOT),
+/* harmony export */   "EXECUTED_TASKS_ROOT": () => (/* binding */ EXECUTED_TASKS_ROOT),
 /* harmony export */   "TASKS_PAGE_TABS": () => (/* binding */ TASKS_PAGE_TABS)
 /* harmony export */ });
+var TASKS_API_ROOT = '/api/tasks/v1';
+var EXECUTED_TASKS_ROOT = '/executed_tasks';
 var TASKS_PAGE_TABS = ['Available tasks', 'Completed tasks'];
 
 /***/ }),
@@ -572,4 +576,4 @@ function _slicedToArray(arr, i) {
 /***/ })
 
 }]);
-//# sourceMappingURL=../sourcemaps/TasksPage.b14ed84598a6f6de16ab90a76909aeff.js.map
+//# sourceMappingURL=../sourcemaps/TasksPage.0451cd1d85c6cd19a4e6d736e80fc80b.js.map

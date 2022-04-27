@@ -1,45 +1,13 @@
-var tasks;
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "webpack/container/entry/tasks":
-/*!***********************!*\
-  !*** container entry ***!
-  \***********************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ "./src/entry-dev.js":
+/*!**************************!*\
+  !*** ./src/entry-dev.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-var moduleMap = {
-	"./RootApp": () => {
-		return Promise.all([__webpack_require__.e("vendors-node_modules_prop-types_index_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Alert_Alert_js-node_modules_pa-7f5ffe"), __webpack_require__.e("vendors-node_modules_lodash__baseIsEqual_js"), __webpack_require__.e("vendors-node_modules_lodash__MapCache_js-node_modules_lodash__isIndex_js-node_modules_lodash_-23152f"), __webpack_require__.e("vendors-node_modules_redhat-cloud-services_frontend-components-notifications_esm_Notification-824813"), __webpack_require__.e("vendors-node_modules_redhat-cloud-services_frontend-components-utilities_esm_helpers_helpers_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-0f3457"), __webpack_require__.e("src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a")]).then(() => (() => ((__webpack_require__(/*! ./src/AppEntry */ "./src/AppEntry.js")))));
-	}
-};
-var get = (module, getScope) => {
-	__webpack_require__.R = getScope;
-	getScope = (
-		__webpack_require__.o(moduleMap, module)
-			? moduleMap[module]()
-			: Promise.resolve().then(() => {
-				throw new Error('Module "' + module + '" does not exist in container.');
-			})
-	);
-	__webpack_require__.R = undefined;
-	return getScope;
-};
-var init = (shareScope, initScope) => {
-	if (!__webpack_require__.S) return;
-	var name = "default"
-	var oldScope = __webpack_require__.S[name];
-	if(oldScope && oldScope !== shareScope) throw new Error("Container initialization failed as it has already been initialized with a different share scope");
-	__webpack_require__.S[name] = shareScope;
-	return __webpack_require__.I(name, initScope);
-};
-
-// This exports getters to disallow modifications
-__webpack_require__.d(exports, {
-	get: () => (get),
-	init: () => (init)
-});
+document.getElementById('root').classList.add('tasks');var isChrome2 = ( true && window.insights && window.insights.chrome && window.insights.chrome.isChrome2) || false; if(!isChrome2){Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_prop-types_index_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Button_Button_js-node_modules_-c5a16f"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Alert_Alert_js-node_modules_pa-7f5ffe"), __webpack_require__.e("vendors-node_modules_lodash__MapCache_js-node_modules_lodash__isIndex_js-node_modules_lodash_-23152f"), __webpack_require__.e("vendors-node_modules_redhat-cloud-services_frontend-components-notifications_esm_Notification-824813"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core"), __webpack_require__.e("webpack_sharing_consume_default_scalprum_react-core_scalprum_react-core-webpack_sharing_consu-219e42"), __webpack_require__.e("src_bootstrap-dev_js-node_modules_redhat-cloud-services_frontend-components-notifications_Not-cb1284")]).then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap-dev */ "./src/bootstrap-dev.js"));}
 
 /***/ })
 
@@ -121,7 +89,7 @@ __webpack_require__.d(exports, {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".1650626474747." + __webpack_require__.h() + ".js";
+/******/ 			return "js/" + chunkId + ".1651084299735." + __webpack_require__.h() + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -130,13 +98,13 @@ __webpack_require__.d(exports, {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + chunkId + "." + {"src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a":"85f4f81233a1b5b94419","TasksPage":"1611b5f2c8e850988bce"}[chunkId] + ".css";
+/******/ 			return "css/" + chunkId + "." + {"src_bootstrap-dev_js-node_modules_redhat-cloud-services_frontend-components-notifications_Not-cb1284":"85f4f81233a1b5b94419","TasksPage":"1611b5f2c8e850988bce","src_PresentationalComponents_CompletedTasksTable_CompletedTasksTable_js":"a97328e8c6175f5c466c"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("fa2d3ad4427334b55c15")
+/******/ 		__webpack_require__.h = () => ("52a3e0f94e0ff8a39cab")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -261,9 +229,10 @@ __webpack_require__.d(exports, {
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
-/******/ 					register("@patternfly/react-core", "4.202.16", () => (Promise.all([__webpack_require__.e("vendors-node_modules_prop-types_index_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Alert_Alert_js-node_modules_pa-7f5ffe"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("_e6c7-_c8e2-_e6f2-_f5f0-_baa3-_f5b3-_9609-_7327-_e64b-_1dc3-_5da5-_cf22-_9531-_50cd-_d031-_aa-360b30")]).then(() => (() => (__webpack_require__(/*! ./node_modules/@patternfly/react-core/dist/esm/index.js */ "./node_modules/@patternfly/react-core/dist/esm/index.js"))))));
+/******/ 					register("@patternfly/react-core", "4.202.16", () => (Promise.all([__webpack_require__.e("vendors-node_modules_prop-types_index_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Button_Button_js-node_modules_-c5a16f"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Alert_Alert_js-node_modules_pa-7f5ffe"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Dropdown_Dropdown_js-node_modu-3f1a84"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("_e6c7-_c8e2-_e6f2-_f5f0-_baa3-_f5b3-_9609-_7327-_e64b-_1dc3-_5da5-_cf22-_9531-_50cd-_d031-_aa-360b30")]).then(() => (() => (__webpack_require__(/*! ./node_modules/@patternfly/react-core/dist/esm/index.js */ "./node_modules/@patternfly/react-core/dist/esm/index.js"))))));
+/******/ 					register("@patternfly/react-table", "4.71.16", () => (Promise.all([__webpack_require__.e("vendors-node_modules_lodash__baseIsEqual_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Button_Button_js-node_modules_-c5a16f"), __webpack_require__.e("vendors-node_modules_lodash__MapCache_js-node_modules_lodash__isIndex_js-node_modules_lodash_-23152f"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Dropdown_Dropdown_js-node_modu-3f1a84"), __webpack_require__.e("vendors-node_modules_lodash__baseMerge_js-node_modules_lodash__createAssigner_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-table_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core"), __webpack_require__.e("_e6c7-_d031-_3421-_9d45-_9754-_ad5f-_1525-_c5e4-_650f-_446c-_df0d-_2d3a-_0f3c-_afff")]).then(() => (() => (__webpack_require__(/*! ./node_modules/@patternfly/react-table/dist/esm/index.js */ "./node_modules/@patternfly/react-table/dist/esm/index.js"))))));
 /******/ 					register("@scalprum/react-core", "0.1.9", () => (Promise.all([__webpack_require__.e("vendors-node_modules_lodash__baseIsEqual_js"), __webpack_require__.e("vendors-node_modules_lodash__MapCache_js-node_modules_lodash__isIndex_js-node_modules_lodash_-23152f"), __webpack_require__.e("vendors-node_modules_scalprum_react-core_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__(/*! ./node_modules/@scalprum/react-core/dist/esm/index.js */ "./node_modules/@scalprum/react-core/dist/esm/index.js"))))));
-/******/ 					register("react-dom", "17.0.2", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("node_modules_object-assign_index_js")]).then(() => (() => (__webpack_require__(/*! ./node_modules/react-dom/index.js */ "./node_modules/react-dom/index.js"))))));
+/******/ 					register("react-dom", "17.0.2", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-dom_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__(/*! ./node_modules/react-dom/index.js */ "./node_modules/react-dom/index.js"))))));
 /******/ 					register("react-redux", "7.2.8", () => (Promise.all([__webpack_require__.e("vendors-node_modules_prop-types_index_js"), __webpack_require__.e("vendors-node_modules_react-redux_es_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("webpack_sharing_consume_default_react-dom_react-dom"), __webpack_require__.e("node_modules_babel_runtime_helpers_esm_extends_js-node_modules_babel_runtime_helpers_esm_obje-8420dd")]).then(() => (() => (__webpack_require__(/*! ./node_modules/react-redux/es/index.js */ "./node_modules/react-redux/es/index.js"))))));
 /******/ 					register("react-router-dom", "5.2.0", () => (Promise.all([__webpack_require__.e("vendors-node_modules_prop-types_index_js"), __webpack_require__.e("vendors-node_modules_react-router-dom_esm_react-router-dom_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react"), __webpack_require__.e("node_modules_babel_runtime_helpers_esm_extends_js-node_modules_babel_runtime_helpers_esm_obje-ad2c1e")]).then(() => (() => (__webpack_require__(/*! ./node_modules/react-router-dom/esm/react-router-dom.js */ "./node_modules/react-router-dom/esm/react-router-dom.js"))))));
 /******/ 					register("react", "17.0.2", () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! ./node_modules/react/index.js */ "./node_modules/react/index.js"))))));
@@ -418,11 +387,12 @@ __webpack_require__.d(exports, {
 /******/ 		var moduleToHandlerMapping = {
 /******/ 			"webpack/sharing/consume/default/react/react": () => (loadSingletonVersionCheckFallback("default", "react", [4,17,0,2], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "./node_modules/react/index.js"))))))),
 /******/ 			"webpack/sharing/consume/default/react-dom/react-dom": () => (loadSingletonVersionCheckFallback("default", "react-dom", [4,17,0,2], () => (__webpack_require__.e("vendors-node_modules_react-dom_index_js").then(() => (() => (__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core": () => (loadStrictVersionCheckFallback("default", "@patternfly/react-core", [4,4,202,16], () => (Promise.all([__webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("_c8e2-_e6f2-_f5f0-_baa3-_9609-_7327-_e64b-_1dc3-_5da5-_cf22-_9531-_50cd-_aa72-_3421-_886b-_61-531d8c")]).then(() => (() => (__webpack_require__(/*! @patternfly/react-core */ "./node_modules/@patternfly/react-core/dist/esm/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/@scalprum/react-core/@scalprum/react-core": () => (loadSingletonVersionCheckFallback("default", "@scalprum/react-core", [0], () => (Promise.all([__webpack_require__.e("vendors-node_modules_lodash__baseIsEqual_js"), __webpack_require__.e("vendors-node_modules_scalprum_react-core_dist_esm_index_js")]).then(() => (() => (__webpack_require__(/*! @scalprum/react-core */ "./node_modules/@scalprum/react-core/dist/esm/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/react-redux/react-redux": () => (loadSingletonVersionCheckFallback("default", "react-redux", [0], () => (__webpack_require__.e("vendors-node_modules_react-redux_es_index_js").then(() => (() => (__webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core": () => (loadStrictVersionCheckFallback("default", "@patternfly/react-core", [4,4,202,16], () => (Promise.all([__webpack_require__.e("vendors-node_modules_prop-types_index_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Alert_Alert_js-node_modules_pa-7f5ffe"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Dropdown_Dropdown_js-node_modu-3f1a84"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("_c8e2-_e6f2-_f5f0-_baa3-_f5b3-_9609-_7327-_e64b-_1dc3-_5da5-_cf22-_9531-_50cd-_aa72-_7560-_34-e7832b")]).then(() => (() => (__webpack_require__(/*! @patternfly/react-core */ "./node_modules/@patternfly/react-core/dist/esm/index.js"))))))),
 /******/ 			"webpack/sharing/consume/default/react-router-dom/react-router-dom": () => (loadStrictVersionCheckFallback("default", "react-router-dom", [4,5,2,0], () => (__webpack_require__.e("vendors-node_modules_react-router-dom_esm_react-router-dom_js").then(() => (() => (__webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js"))))))),
-/******/ 			"webpack/sharing/consume/default/redux-promise-middleware/redux-promise-middleware": () => (loadStrictVersionCheckFallback("default", "redux-promise-middleware", [4,6,1,2], () => (__webpack_require__.e("vendors-node_modules_redux-promise-middleware_dist_es_index_js").then(() => (() => (__webpack_require__(/*! redux-promise-middleware */ "./node_modules/redux-promise-middleware/dist/es/index.js")))))))
+/******/ 			"webpack/sharing/consume/default/react-redux/react-redux": () => (loadSingletonVersionCheckFallback("default", "react-redux", [0], () => (__webpack_require__.e("vendors-node_modules_react-redux_es_index_js").then(() => (() => (__webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/redux-promise-middleware/redux-promise-middleware": () => (loadStrictVersionCheckFallback("default", "redux-promise-middleware", [4,6,1,2], () => (__webpack_require__.e("vendors-node_modules_redux-promise-middleware_dist_es_index_js").then(() => (() => (__webpack_require__(/*! redux-promise-middleware */ "./node_modules/redux-promise-middleware/dist/es/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/@scalprum/react-core/@scalprum/react-core": () => (loadSingletonVersionCheckFallback("default", "@scalprum/react-core", [0], () => (Promise.all([__webpack_require__.e("vendors-node_modules_lodash__baseIsEqual_js"), __webpack_require__.e("vendors-node_modules_scalprum_react-core_dist_esm_index_js")]).then(() => (() => (__webpack_require__(/*! @scalprum/react-core */ "./node_modules/@scalprum/react-core/dist/esm/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/@patternfly/react-table/@patternfly/react-table": () => (loadStrictVersionCheckFallback("default", "@patternfly/react-table", [4,4,71,16], () => (Promise.all([__webpack_require__.e("vendors-node_modules_lodash__baseIsEqual_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_components_Dropdown_Dropdown_js-node_modu-3f1a84"), __webpack_require__.e("vendors-node_modules_lodash__baseMerge_js-node_modules_lodash__createAssigner_js"), __webpack_require__.e("vendors-node_modules_patternfly_react-table_dist_esm_index_js"), __webpack_require__.e("_3421-_9d45-_ad5f-_1525-_c5e4-_446c-_df0d-_2d3a-_0f3c")]).then(() => (() => (__webpack_require__(/*! @patternfly/react-table */ "./node_modules/@patternfly/react-table/dist/esm/index.js")))))))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
@@ -432,12 +402,17 @@ __webpack_require__.d(exports, {
 /******/ 			"webpack_sharing_consume_default_react-dom_react-dom": [
 /******/ 				"webpack/sharing/consume/default/react-dom/react-dom"
 /******/ 			],
-/******/ 			"webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-0f3457": [
-/******/ 				"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core",
-/******/ 				"webpack/sharing/consume/default/@scalprum/react-core/@scalprum/react-core",
-/******/ 				"webpack/sharing/consume/default/react-redux/react-redux",
+/******/ 			"webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core": [
+/******/ 				"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core"
+/******/ 			],
+/******/ 			"webpack_sharing_consume_default_scalprum_react-core_scalprum_react-core-webpack_sharing_consu-219e42": [
 /******/ 				"webpack/sharing/consume/default/react-router-dom/react-router-dom",
-/******/ 				"webpack/sharing/consume/default/redux-promise-middleware/redux-promise-middleware"
+/******/ 				"webpack/sharing/consume/default/react-redux/react-redux",
+/******/ 				"webpack/sharing/consume/default/redux-promise-middleware/redux-promise-middleware",
+/******/ 				"webpack/sharing/consume/default/@scalprum/react-core/@scalprum/react-core"
+/******/ 			],
+/******/ 			"src_PresentationalComponents_CompletedTasksTable_CompletedTasksTable_js": [
+/******/ 				"webpack/sharing/consume/default/@patternfly/react-table/@patternfly/react-table"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -522,11 +497,11 @@ __webpack_require__.d(exports, {
 /******/ 		}
 /******/ 		// object to store loaded CSS chunks
 /******/ 		var installedCssChunks = {
-/******/ 			"tasks": 0
+/******/ 			"App": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a":1,"TasksPage":1};
+/******/ 			var cssChunks = {"src_bootstrap-dev_js-node_modules_redhat-cloud-services_frontend-components-notifications_Not-cb1284":1,"TasksPage":1,"src_PresentationalComponents_CompletedTasksTable_CompletedTasksTable_js":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
@@ -549,7 +524,7 @@ __webpack_require__.d(exports, {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"tasks": 0
+/******/ 			"App": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -561,7 +536,7 @@ __webpack_require__.d(exports, {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^webpack_sharing_consume_default_(react(\-dom_react\-dom|_react)|patternfly_react\-core_patternfly_react\-core\-webpack_sharing_c\-0f3457)$/.test(chunkId)) {
+/******/ 						if(!/^webpack_sharing_consume_default_(react(\-dom_react\-dom|_react)|patternfly_react\-core_patternfly_react\-core|scalprum_react\-core_scalprum_react\-core\-webpack_sharing_consu\-219e42)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
@@ -636,8 +611,8 @@ __webpack_require__.d(exports, {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__("webpack/container/entry/tasks");
-/******/ 	tasks = __webpack_exports__;
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/entry-dev.js");
 /******/ 	
 /******/ })()
 ;
+//# sourceMappingURL=../sourcemaps/App.bf85bcd6a542e01acb0223007010e3aa.js.map
