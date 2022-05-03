@@ -1,12 +1,12 @@
 {
     "tasks": {
         "entry": [
-            "/apps/tasks/tasks.1651586759163.5a11acc5c3d5d2d5cd9c.js"
+            "/apps/tasks/tasks.1651586813636.d127c05adc1251e15569.js"
         ],
         "modules": [
             "/apps/tasks/css/src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a.85f4f81233a1b5b94419.css",
-            "/apps/tasks/js/src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a.1651586759085.5a11acc5c3d5d2d5cd9c.js",
-            "/apps/tasks/js/vendors-node_modules_redhat-cloud-services_frontend-components-utilities_esm_helpers_helpers_js.1651586759085.5a11acc5c3d5d2d5cd9c.js"
+            "/apps/tasks/js/src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a.1651586813558.d127c05adc1251e15569.js",
+            "/apps/tasks/js/vendors-node_modules_redhat-cloud-services_frontend-components-utilities_esm_helpers_helpers_js.1651586813558.d127c05adc1251e15569.js"
         ]
     }
 }
