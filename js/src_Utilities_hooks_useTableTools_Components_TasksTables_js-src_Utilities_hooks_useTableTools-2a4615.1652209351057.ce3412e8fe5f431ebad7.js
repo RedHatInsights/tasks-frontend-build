@@ -1,212 +1,5 @@
-(self["webpackChunktasks_frontend"] = self["webpackChunktasks_frontend"] || []).push([["src_PresentationalComponents_CompletedTasksTable_CompletedTasksTable_js-node_modules_moment_l-ea6446"],{
-
-/***/ "./src/PresentationalComponents/CompletedTasksTable/Columns.js":
-/*!*********************************************************************!*\
-  !*** ./src/PresentationalComponents/CompletedTasksTable/Columns.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Task": () => (/* binding */ Task),
-/* harmony export */   "Systems": () => (/* binding */ Systems),
-/* harmony export */   "RunDateTime": () => (/* binding */ RunDateTime),
-/* harmony export */   "exportableColumns": () => (/* binding */ exportableColumns),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-var Task = {
-  title: 'Task',
-  props: {
-    width: 35
-  },
-  sortByProp: 'title',
-  renderExport: function renderExport(task) {
-    return task.title;
-  }
-};
-var Systems = {
-  title: 'Systems',
-  props: {
-    width: 20
-  },
-  sortByProp: 'system_count',
-  renderExport: function renderExport(task) {
-    return task.system_count;
-  }
-};
-var RunDateTime = {
-  title: 'Run date/time',
-  props: {
-    width: 20
-  },
-  sortByProp: 'end',
-  renderExport: function renderExport(task) {
-    return task.end;
-  }
-};
-var exportableColumns = [Task, Systems, RunDateTime];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([Task, Systems, RunDateTime]);
-
-/***/ }),
-
-/***/ "./src/PresentationalComponents/CompletedTasksTable/CompletedTasksTable.js":
-/*!*********************************************************************************!*\
-  !*** ./src/PresentationalComponents/CompletedTasksTable/CompletedTasksTable.js ***!
-  \*********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "webpack/sharing/consume/default/react/react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _Utilities_hooks_useTableTools_Components_TasksTables__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Utilities/hooks/useTableTools/Components/TasksTables */ "./src/Utilities/hooks/useTableTools/Components/TasksTables.js");
-/* harmony import */ var _Columns__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Columns */ "./src/PresentationalComponents/CompletedTasksTable/Columns.js");
-/* harmony import */ var _Utilities_hooks_useTableTools_Components_tests_TasksTable_fixtures__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Utilities/hooks/useTableTools/Components/__tests__/TasksTable.fixtures */ "./src/Utilities/hooks/useTableTools/Components/__tests__/TasksTable.fixtures.js");
-/* harmony import */ var _Filters__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Filters */ "./src/PresentationalComponents/CompletedTasksTable/Filters.js");
-/* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../constants */ "./src/constants.js");
-
-
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-
-
-
- //import { fetchExecutedTasks } from '../../../api';
-
-
-
-
-
-var CompletedTasksTable = function CompletedTasksTable() {
-  var filters = Object.values(_Filters__WEBPACK_IMPORTED_MODULE_5__); //const [completedTasks, setCompletedTasks] = useState(items);
-
-  /*useEffect(() => {
-    const fetchData = () => {
-      const result = fetchExecutedTasks();
-       setCompletedTasks(result);
-    };
-     fetchData();
-  }, []);*/
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_Utilities_hooks_useTableTools_Components_TasksTables__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    label: "completed-tasks",
-    ouiaId: "completed-tasks-table",
-    columns: _Columns__WEBPACK_IMPORTED_MODULE_3__["default"],
-    items: _Utilities_hooks_useTableTools_Components_tests_TasksTable_fixtures__WEBPACK_IMPORTED_MODULE_4__.completedTasksTableItems,
-    filters: {
-      filterConfig: filters
-    },
-    options: _objectSpread(_objectSpread({}, _constants__WEBPACK_IMPORTED_MODULE_6__.TASKS_TABLE_DEFAULTS), {}, {
-      exportable: _objectSpread(_objectSpread({}, _constants__WEBPACK_IMPORTED_MODULE_6__.TASKS_TABLE_DEFAULTS.exportable), {}, {
-        columns: _Columns__WEBPACK_IMPORTED_MODULE_3__.exportableColumns
-      })
-    }) //items={completedTasks}
-    //emptyRows={emptyRows}
-    ,
-    isStickyHeader: true
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CompletedTasksTable);
-
-/***/ }),
-
-/***/ "./src/PresentationalComponents/CompletedTasksTable/Filters.js":
-/*!*********************************************************************!*\
-  !*** ./src/PresentationalComponents/CompletedTasksTable/Filters.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "nameFilter": () => (/* binding */ nameFilter)
-/* harmony export */ });
-/* harmony import */ var _redhat_cloud_services_frontend_components_ConditionalFilter__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @redhat-cloud-services/frontend-components/ConditionalFilter */ "./node_modules/@redhat-cloud-services/frontend-components/esm/ConditionalFilter/conditionalFilterConstants.js");
-
-var nameFilter = {
-  type: _redhat_cloud_services_frontend_components_ConditionalFilter__WEBPACK_IMPORTED_MODULE_0__.conditionalFilterType.text,
-  label: 'Task',
-  filter: function filter(tasks, value) {
-    return tasks.filter(function (task) {
-      return task.title.toLowerCase().includes(value.toLowerCase());
-    });
-  }
-};
-
-/***/ }),
-
-/***/ "./src/Utilities/helpers.js":
-/*!**********************************!*\
-  !*** ./src/Utilities/helpers.js ***!
-  \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "uniq": () => (/* binding */ uniq),
-/* harmony export */   "orderArrayByProp": () => (/* binding */ orderArrayByProp),
-/* harmony export */   "orderByArray": () => (/* binding */ orderByArray),
-/* harmony export */   "getProperty": () => (/* binding */ getProperty),
-/* harmony export */   "camelCase": () => (/* binding */ camelCase)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
-
-var uniq = function uniq(collection) {
-  return (0,_babel_runtime_helpers_toConsumableArray__WEBPACK_IMPORTED_MODULE_0__["default"])(new Set(collection));
-};
-
-var getSortable = function getSortable(property, item) {
-  if (typeof property === 'function') {
-    return property(item);
-  } else {
-    return item[property];
-  }
-};
-
-var orderArrayByProp = function orderArrayByProp(property, objects, direction) {
-  return objects.sort(function (a, b) {
-    if (direction === 'asc') {
-      return String(getSortable(property, a)).localeCompare(String(getSortable(property, b)));
-    } else {
-      return -String(getSortable(property, a)).localeCompare(String(getSortable(property, b)));
-    }
-  });
-};
-var orderByArray = function orderByArray(objectArray, orderProp, orderArray, direction) {
-  var sortedObjectArray = orderArray.flatMap(function (orderKey) {
-    return objectArray.filter(function (item) {
-      return item[orderProp] === orderKey;
-    });
-  });
-  return direction !== 'asc' ? sortedObjectArray.reverse() : sortedObjectArray;
-};
-var getProperty = function getProperty(obj, path, fallback) {
-  var parts = path.split('.');
-  var key = parts.shift();
-
-  if (typeof obj[key] !== 'undefined') {
-    return parts.length > 0 ? getProperty(obj[key], parts.join('.'), fallback) : obj[key];
-  }
-
-  return fallback;
-};
-var camelCase = function camelCase(string) {
-  return string.split(/[-_\W]+/g).map(function (string) {
-    return string.trim();
-  }).map(function (string) {
-    return string[0].toUpperCase() + string.substring(1);
-  }).join('');
-};
-
-/***/ }),
+(self["webpackChunktasks_frontend"] = self["webpackChunktasks_frontend"] || []).push([["src_Utilities_hooks_useTableTools_Components_TasksTables_js-src_Utilities_hooks_useTableTools-2a4615"],{
 
 /***/ "./src/Utilities/hooks/useTableTools/Components/SelectedFilterSwitch.js":
 /*!******************************************************************************!*\
@@ -214,7 +7,6 @@ var camelCase = function camelCase(string) {
   \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -257,7 +49,6 @@ SelectedFilterSwitch.propTypes = {
   \*********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -335,7 +126,6 @@ TasksTables.propTypes = {
       title: propTypes.node,
       transforms: propTypes.array,
       sortByProperty: propTypes.string,
-      sortByArray: propTypes.array,
       sortByFunction: propTypes.func,
       renderFunc: propTypes.func,
     })
@@ -355,16 +145,17 @@ TasksTables.propTypes = {
   \***************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "completedTasksTableItems": () => (/* binding */ completedTasksTableItems)
+/* harmony export */   "completedTasksTableItems": () => (/* binding */ completedTasksTableItems),
+/* harmony export */   "completedTaskJobsItems": () => (/* binding */ completedTaskJobsItems)
 /* harmony export */ });
 var completedTasksTableItems = [{
   title: 'taskA',
   id: 1,
   start: '2022-04-21T10:10:00',
   end: 'null',
+  run_date_time: 'Running',
   initiated_by: 'Michael',
   status: 'running',
   system_count: 10
@@ -373,9 +164,47 @@ var completedTasksTableItems = [{
   id: 2,
   start: '2022-04-20T10:10:00',
   end: '2022-04-20T11:10:00',
+  run_date_time: '20 Apr 2022, 11:10 UTC',
   initiated_by: 'Michael',
   status: 'complete',
   system_count: 5
+}];
+var completedTaskJobsItems = [{
+  id: 82,
+  display_name: 'host01.example.com',
+  host_id: '00112233-4455-6677-8899aabbccddeeff',
+  message: 'Vulnerability found.',
+  status: 'completed'
+}, {
+  id: 83,
+  display_name: 'host02.example.com',
+  host_id: '00112233-4455-6677-8899aabbccddeefg',
+  message: 'No vulnerability found.',
+  status: 'completed'
+}, {
+  id: 84,
+  display_name: 'host03.example.com',
+  host_id: '00112233-4455-6677-8899aabbccddeefh',
+  message: 'No vulnerability found.',
+  status: 'completed'
+}, {
+  id: 85,
+  display_name: 'host04.example.com',
+  host_id: '00112233-4455-6677-8899aabbccddeefi',
+  message: 'Vulnerability found.',
+  status: 'completed'
+}, {
+  id: 86,
+  display_name: 'host05.example.com',
+  host_id: '00112233-4455-6677-8899aabbccddeefj',
+  message: 'Vulnerability found.',
+  status: 'completed'
+}, {
+  id: 87,
+  display_name: 'host06.example.com',
+  host_id: '00112233-4455-6677-8899aabbccddeefk',
+  message: 'No vulnerability found.',
+  status: 'completed'
 }];
 
 /***/ }),
@@ -386,7 +215,6 @@ var completedTasksTableItems = [{
   \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -516,7 +344,6 @@ var ChipBuilder = /*#__PURE__*/(0,_babel_runtime_helpers_createClass__WEBPACK_IM
   \********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -600,7 +427,6 @@ var FilterBuilder = /*#__PURE__*/(0,_babel_runtime_helpers_createClass__WEBPACK_
   \**************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -920,7 +746,6 @@ var FilterConfigBuilder = /*#__PURE__*/(0,_babel_runtime_helpers_createClass__WE
   \**************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "stringToId": () => (/* binding */ stringToId)
@@ -937,7 +762,6 @@ var stringToId = function stringToId(string) {
   \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "linkAndDownload": () => (/* binding */ linkAndDownload),
@@ -1131,7 +955,6 @@ var useExportWithItems = function useExportWithItems(items, columns) {
   \**************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1322,7 +1145,6 @@ var useFilterConfig = function useFilterConfig() {
   \**********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1408,44 +1230,38 @@ var usePaginate = function usePaginate() {
   \*************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "webpack/sharing/consume/default/react/react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
 
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
 
+var columnProp = function columnProp(column) {
+  var _column$original, _column$sortByProp;
 
-
-
-var renderRunDateTime = function renderRunDateTime(end) {
-  return end === 'null' ? 'Running' : moment__WEBPACK_IMPORTED_MODULE_2___default().utc(end).format('DD MMM YYYY, HH:mm UTC');
+  return column.key || ((_column$original = column.original) === null || _column$original === void 0 ? void 0 : _column$original.toLowerCase()) || ((_column$sortByProp = column.sortByProp) === null || _column$sortByProp === void 0 ? void 0 : _column$sortByProp.toLowerCase());
 };
 
-var buildRow = function buildRow(item, index) {
-  return [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div", {
-    key: "task-title-".concat(index)
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement("a", {
-    href: "beta/insights/tasks"
-  }, item.title)), item.system_count, renderRunDateTime(item.end)];
+var buildRow = function buildRow(item, columns, index) {
+  return columns.map(function (column) {
+    return {
+      title: column.renderFunc ? column.renderFunc(undefined, undefined, item, index) : item[columnProp(column)]
+    };
+  });
 };
 
-var useRowsBuilder = function useRowsBuilder(items) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+var useRowsBuilder = function useRowsBuilder(items, columns) {
+  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
   var filteredItems = options !== null && options !== void 0 && options.filter ? options.filter(items) : items;
   var sortedItems = options !== null && options !== void 0 && options.sorter ? options.sorter(filteredItems) : filteredItems;
   var paginatedItems = options !== null && options !== void 0 && options.paginator ? options === null || options === void 0 ? void 0 : options.paginator(filteredItems) : sortedItems;
   var rows = paginatedItems.map(function (item, index) {
-    return buildRow(item, index);
+    return buildRow(item, columns, index);
   });
   var pagination = options !== null && options !== void 0 && options.pagination ? _objectSpread(_objectSpread({}, options.pagination), {}, {
     itemCount: filteredItems.length
@@ -1470,7 +1286,6 @@ var useRowsBuilder = function useRowsBuilder(items) {
   \****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1523,7 +1338,6 @@ var useSelectedFilter = function useSelectedFilter(_ref) {
   \***********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "useTableSortWithItems": () => (/* binding */ useTableSortWithItems),
@@ -1587,7 +1401,7 @@ var useTableSort = function useTableSort(columns) {
   var currentSortableColumn = columns[sortBy.index - columnOffset(options)];
 
   var sorter = function sorter(items) {
-    return currentSortableColumn !== null && currentSortableColumn !== void 0 && currentSortableColumn.sortByArray ? (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.orderByArray)(items, currentSortableColumn === null || currentSortableColumn === void 0 ? void 0 : currentSortableColumn.sortByProp, currentSortableColumn === null || currentSortableColumn === void 0 ? void 0 : currentSortableColumn.sortByArray, sortBy.direction) : (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.orderArrayByProp)((currentSortableColumn === null || currentSortableColumn === void 0 ? void 0 : currentSortableColumn.sortByProp) || (currentSortableColumn === null || currentSortableColumn === void 0 ? void 0 : currentSortableColumn.sortByFunction), items, sortBy.direction);
+    return (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.orderArrayByProp)((currentSortableColumn === null || currentSortableColumn === void 0 ? void 0 : currentSortableColumn.sortByProp) || (currentSortableColumn === null || currentSortableColumn === void 0 ? void 0 : currentSortableColumn.sortByFunction), items, sortBy.direction);
   };
 
   return {
@@ -1622,7 +1436,6 @@ var useTableSortWithItems = function useTableSortWithItems(items, columns, optio
   \************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1674,7 +1487,7 @@ var useTableTools = function useTableTools() {
   var _useExportWithItems = (0,_useExport__WEBPACK_IMPORTED_MODULE_4__.useExportWithItems)(filteredAndSortedItems(items, filter, sorter), columns, options),
       exportToolbarProps = _useExportWithItems.toolbarProps;
 
-  var _useRowsBuilder = (0,_useRowsBuilder__WEBPACK_IMPORTED_MODULE_1__["default"])(items, {
+  var _useRowsBuilder = (0,_useRowsBuilder__WEBPACK_IMPORTED_MODULE_1__["default"])(items, columns, {
     pagination: paginationToolbarProps === null || paginationToolbarProps === void 0 ? void 0 : paginationToolbarProps.pagination,
     paginator: paginator,
     filter: filter,
@@ -1697,307 +1510,7 @@ var useTableTools = function useTableTools() {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTableTools);
 
-/***/ }),
-
-/***/ "./node_modules/moment/locale sync recursive ^\\.\\/.*$":
-/*!***************************************************!*\
-  !*** ./node_modules/moment/locale/ sync ^\.\/.*$ ***!
-  \***************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var map = {
-	"./af": "./node_modules/moment/locale/af.js",
-	"./af.js": "./node_modules/moment/locale/af.js",
-	"./ar": "./node_modules/moment/locale/ar.js",
-	"./ar-dz": "./node_modules/moment/locale/ar-dz.js",
-	"./ar-dz.js": "./node_modules/moment/locale/ar-dz.js",
-	"./ar-kw": "./node_modules/moment/locale/ar-kw.js",
-	"./ar-kw.js": "./node_modules/moment/locale/ar-kw.js",
-	"./ar-ly": "./node_modules/moment/locale/ar-ly.js",
-	"./ar-ly.js": "./node_modules/moment/locale/ar-ly.js",
-	"./ar-ma": "./node_modules/moment/locale/ar-ma.js",
-	"./ar-ma.js": "./node_modules/moment/locale/ar-ma.js",
-	"./ar-sa": "./node_modules/moment/locale/ar-sa.js",
-	"./ar-sa.js": "./node_modules/moment/locale/ar-sa.js",
-	"./ar-tn": "./node_modules/moment/locale/ar-tn.js",
-	"./ar-tn.js": "./node_modules/moment/locale/ar-tn.js",
-	"./ar.js": "./node_modules/moment/locale/ar.js",
-	"./az": "./node_modules/moment/locale/az.js",
-	"./az.js": "./node_modules/moment/locale/az.js",
-	"./be": "./node_modules/moment/locale/be.js",
-	"./be.js": "./node_modules/moment/locale/be.js",
-	"./bg": "./node_modules/moment/locale/bg.js",
-	"./bg.js": "./node_modules/moment/locale/bg.js",
-	"./bm": "./node_modules/moment/locale/bm.js",
-	"./bm.js": "./node_modules/moment/locale/bm.js",
-	"./bn": "./node_modules/moment/locale/bn.js",
-	"./bn-bd": "./node_modules/moment/locale/bn-bd.js",
-	"./bn-bd.js": "./node_modules/moment/locale/bn-bd.js",
-	"./bn.js": "./node_modules/moment/locale/bn.js",
-	"./bo": "./node_modules/moment/locale/bo.js",
-	"./bo.js": "./node_modules/moment/locale/bo.js",
-	"./br": "./node_modules/moment/locale/br.js",
-	"./br.js": "./node_modules/moment/locale/br.js",
-	"./bs": "./node_modules/moment/locale/bs.js",
-	"./bs.js": "./node_modules/moment/locale/bs.js",
-	"./ca": "./node_modules/moment/locale/ca.js",
-	"./ca.js": "./node_modules/moment/locale/ca.js",
-	"./cs": "./node_modules/moment/locale/cs.js",
-	"./cs.js": "./node_modules/moment/locale/cs.js",
-	"./cv": "./node_modules/moment/locale/cv.js",
-	"./cv.js": "./node_modules/moment/locale/cv.js",
-	"./cy": "./node_modules/moment/locale/cy.js",
-	"./cy.js": "./node_modules/moment/locale/cy.js",
-	"./da": "./node_modules/moment/locale/da.js",
-	"./da.js": "./node_modules/moment/locale/da.js",
-	"./de": "./node_modules/moment/locale/de.js",
-	"./de-at": "./node_modules/moment/locale/de-at.js",
-	"./de-at.js": "./node_modules/moment/locale/de-at.js",
-	"./de-ch": "./node_modules/moment/locale/de-ch.js",
-	"./de-ch.js": "./node_modules/moment/locale/de-ch.js",
-	"./de.js": "./node_modules/moment/locale/de.js",
-	"./dv": "./node_modules/moment/locale/dv.js",
-	"./dv.js": "./node_modules/moment/locale/dv.js",
-	"./el": "./node_modules/moment/locale/el.js",
-	"./el.js": "./node_modules/moment/locale/el.js",
-	"./en-au": "./node_modules/moment/locale/en-au.js",
-	"./en-au.js": "./node_modules/moment/locale/en-au.js",
-	"./en-ca": "./node_modules/moment/locale/en-ca.js",
-	"./en-ca.js": "./node_modules/moment/locale/en-ca.js",
-	"./en-gb": "./node_modules/moment/locale/en-gb.js",
-	"./en-gb.js": "./node_modules/moment/locale/en-gb.js",
-	"./en-ie": "./node_modules/moment/locale/en-ie.js",
-	"./en-ie.js": "./node_modules/moment/locale/en-ie.js",
-	"./en-il": "./node_modules/moment/locale/en-il.js",
-	"./en-il.js": "./node_modules/moment/locale/en-il.js",
-	"./en-in": "./node_modules/moment/locale/en-in.js",
-	"./en-in.js": "./node_modules/moment/locale/en-in.js",
-	"./en-nz": "./node_modules/moment/locale/en-nz.js",
-	"./en-nz.js": "./node_modules/moment/locale/en-nz.js",
-	"./en-sg": "./node_modules/moment/locale/en-sg.js",
-	"./en-sg.js": "./node_modules/moment/locale/en-sg.js",
-	"./eo": "./node_modules/moment/locale/eo.js",
-	"./eo.js": "./node_modules/moment/locale/eo.js",
-	"./es": "./node_modules/moment/locale/es.js",
-	"./es-do": "./node_modules/moment/locale/es-do.js",
-	"./es-do.js": "./node_modules/moment/locale/es-do.js",
-	"./es-mx": "./node_modules/moment/locale/es-mx.js",
-	"./es-mx.js": "./node_modules/moment/locale/es-mx.js",
-	"./es-us": "./node_modules/moment/locale/es-us.js",
-	"./es-us.js": "./node_modules/moment/locale/es-us.js",
-	"./es.js": "./node_modules/moment/locale/es.js",
-	"./et": "./node_modules/moment/locale/et.js",
-	"./et.js": "./node_modules/moment/locale/et.js",
-	"./eu": "./node_modules/moment/locale/eu.js",
-	"./eu.js": "./node_modules/moment/locale/eu.js",
-	"./fa": "./node_modules/moment/locale/fa.js",
-	"./fa.js": "./node_modules/moment/locale/fa.js",
-	"./fi": "./node_modules/moment/locale/fi.js",
-	"./fi.js": "./node_modules/moment/locale/fi.js",
-	"./fil": "./node_modules/moment/locale/fil.js",
-	"./fil.js": "./node_modules/moment/locale/fil.js",
-	"./fo": "./node_modules/moment/locale/fo.js",
-	"./fo.js": "./node_modules/moment/locale/fo.js",
-	"./fr": "./node_modules/moment/locale/fr.js",
-	"./fr-ca": "./node_modules/moment/locale/fr-ca.js",
-	"./fr-ca.js": "./node_modules/moment/locale/fr-ca.js",
-	"./fr-ch": "./node_modules/moment/locale/fr-ch.js",
-	"./fr-ch.js": "./node_modules/moment/locale/fr-ch.js",
-	"./fr.js": "./node_modules/moment/locale/fr.js",
-	"./fy": "./node_modules/moment/locale/fy.js",
-	"./fy.js": "./node_modules/moment/locale/fy.js",
-	"./ga": "./node_modules/moment/locale/ga.js",
-	"./ga.js": "./node_modules/moment/locale/ga.js",
-	"./gd": "./node_modules/moment/locale/gd.js",
-	"./gd.js": "./node_modules/moment/locale/gd.js",
-	"./gl": "./node_modules/moment/locale/gl.js",
-	"./gl.js": "./node_modules/moment/locale/gl.js",
-	"./gom-deva": "./node_modules/moment/locale/gom-deva.js",
-	"./gom-deva.js": "./node_modules/moment/locale/gom-deva.js",
-	"./gom-latn": "./node_modules/moment/locale/gom-latn.js",
-	"./gom-latn.js": "./node_modules/moment/locale/gom-latn.js",
-	"./gu": "./node_modules/moment/locale/gu.js",
-	"./gu.js": "./node_modules/moment/locale/gu.js",
-	"./he": "./node_modules/moment/locale/he.js",
-	"./he.js": "./node_modules/moment/locale/he.js",
-	"./hi": "./node_modules/moment/locale/hi.js",
-	"./hi.js": "./node_modules/moment/locale/hi.js",
-	"./hr": "./node_modules/moment/locale/hr.js",
-	"./hr.js": "./node_modules/moment/locale/hr.js",
-	"./hu": "./node_modules/moment/locale/hu.js",
-	"./hu.js": "./node_modules/moment/locale/hu.js",
-	"./hy-am": "./node_modules/moment/locale/hy-am.js",
-	"./hy-am.js": "./node_modules/moment/locale/hy-am.js",
-	"./id": "./node_modules/moment/locale/id.js",
-	"./id.js": "./node_modules/moment/locale/id.js",
-	"./is": "./node_modules/moment/locale/is.js",
-	"./is.js": "./node_modules/moment/locale/is.js",
-	"./it": "./node_modules/moment/locale/it.js",
-	"./it-ch": "./node_modules/moment/locale/it-ch.js",
-	"./it-ch.js": "./node_modules/moment/locale/it-ch.js",
-	"./it.js": "./node_modules/moment/locale/it.js",
-	"./ja": "./node_modules/moment/locale/ja.js",
-	"./ja.js": "./node_modules/moment/locale/ja.js",
-	"./jv": "./node_modules/moment/locale/jv.js",
-	"./jv.js": "./node_modules/moment/locale/jv.js",
-	"./ka": "./node_modules/moment/locale/ka.js",
-	"./ka.js": "./node_modules/moment/locale/ka.js",
-	"./kk": "./node_modules/moment/locale/kk.js",
-	"./kk.js": "./node_modules/moment/locale/kk.js",
-	"./km": "./node_modules/moment/locale/km.js",
-	"./km.js": "./node_modules/moment/locale/km.js",
-	"./kn": "./node_modules/moment/locale/kn.js",
-	"./kn.js": "./node_modules/moment/locale/kn.js",
-	"./ko": "./node_modules/moment/locale/ko.js",
-	"./ko.js": "./node_modules/moment/locale/ko.js",
-	"./ku": "./node_modules/moment/locale/ku.js",
-	"./ku.js": "./node_modules/moment/locale/ku.js",
-	"./ky": "./node_modules/moment/locale/ky.js",
-	"./ky.js": "./node_modules/moment/locale/ky.js",
-	"./lb": "./node_modules/moment/locale/lb.js",
-	"./lb.js": "./node_modules/moment/locale/lb.js",
-	"./lo": "./node_modules/moment/locale/lo.js",
-	"./lo.js": "./node_modules/moment/locale/lo.js",
-	"./lt": "./node_modules/moment/locale/lt.js",
-	"./lt.js": "./node_modules/moment/locale/lt.js",
-	"./lv": "./node_modules/moment/locale/lv.js",
-	"./lv.js": "./node_modules/moment/locale/lv.js",
-	"./me": "./node_modules/moment/locale/me.js",
-	"./me.js": "./node_modules/moment/locale/me.js",
-	"./mi": "./node_modules/moment/locale/mi.js",
-	"./mi.js": "./node_modules/moment/locale/mi.js",
-	"./mk": "./node_modules/moment/locale/mk.js",
-	"./mk.js": "./node_modules/moment/locale/mk.js",
-	"./ml": "./node_modules/moment/locale/ml.js",
-	"./ml.js": "./node_modules/moment/locale/ml.js",
-	"./mn": "./node_modules/moment/locale/mn.js",
-	"./mn.js": "./node_modules/moment/locale/mn.js",
-	"./mr": "./node_modules/moment/locale/mr.js",
-	"./mr.js": "./node_modules/moment/locale/mr.js",
-	"./ms": "./node_modules/moment/locale/ms.js",
-	"./ms-my": "./node_modules/moment/locale/ms-my.js",
-	"./ms-my.js": "./node_modules/moment/locale/ms-my.js",
-	"./ms.js": "./node_modules/moment/locale/ms.js",
-	"./mt": "./node_modules/moment/locale/mt.js",
-	"./mt.js": "./node_modules/moment/locale/mt.js",
-	"./my": "./node_modules/moment/locale/my.js",
-	"./my.js": "./node_modules/moment/locale/my.js",
-	"./nb": "./node_modules/moment/locale/nb.js",
-	"./nb.js": "./node_modules/moment/locale/nb.js",
-	"./ne": "./node_modules/moment/locale/ne.js",
-	"./ne.js": "./node_modules/moment/locale/ne.js",
-	"./nl": "./node_modules/moment/locale/nl.js",
-	"./nl-be": "./node_modules/moment/locale/nl-be.js",
-	"./nl-be.js": "./node_modules/moment/locale/nl-be.js",
-	"./nl.js": "./node_modules/moment/locale/nl.js",
-	"./nn": "./node_modules/moment/locale/nn.js",
-	"./nn.js": "./node_modules/moment/locale/nn.js",
-	"./oc-lnc": "./node_modules/moment/locale/oc-lnc.js",
-	"./oc-lnc.js": "./node_modules/moment/locale/oc-lnc.js",
-	"./pa-in": "./node_modules/moment/locale/pa-in.js",
-	"./pa-in.js": "./node_modules/moment/locale/pa-in.js",
-	"./pl": "./node_modules/moment/locale/pl.js",
-	"./pl.js": "./node_modules/moment/locale/pl.js",
-	"./pt": "./node_modules/moment/locale/pt.js",
-	"./pt-br": "./node_modules/moment/locale/pt-br.js",
-	"./pt-br.js": "./node_modules/moment/locale/pt-br.js",
-	"./pt.js": "./node_modules/moment/locale/pt.js",
-	"./ro": "./node_modules/moment/locale/ro.js",
-	"./ro.js": "./node_modules/moment/locale/ro.js",
-	"./ru": "./node_modules/moment/locale/ru.js",
-	"./ru.js": "./node_modules/moment/locale/ru.js",
-	"./sd": "./node_modules/moment/locale/sd.js",
-	"./sd.js": "./node_modules/moment/locale/sd.js",
-	"./se": "./node_modules/moment/locale/se.js",
-	"./se.js": "./node_modules/moment/locale/se.js",
-	"./si": "./node_modules/moment/locale/si.js",
-	"./si.js": "./node_modules/moment/locale/si.js",
-	"./sk": "./node_modules/moment/locale/sk.js",
-	"./sk.js": "./node_modules/moment/locale/sk.js",
-	"./sl": "./node_modules/moment/locale/sl.js",
-	"./sl.js": "./node_modules/moment/locale/sl.js",
-	"./sq": "./node_modules/moment/locale/sq.js",
-	"./sq.js": "./node_modules/moment/locale/sq.js",
-	"./sr": "./node_modules/moment/locale/sr.js",
-	"./sr-cyrl": "./node_modules/moment/locale/sr-cyrl.js",
-	"./sr-cyrl.js": "./node_modules/moment/locale/sr-cyrl.js",
-	"./sr.js": "./node_modules/moment/locale/sr.js",
-	"./ss": "./node_modules/moment/locale/ss.js",
-	"./ss.js": "./node_modules/moment/locale/ss.js",
-	"./sv": "./node_modules/moment/locale/sv.js",
-	"./sv.js": "./node_modules/moment/locale/sv.js",
-	"./sw": "./node_modules/moment/locale/sw.js",
-	"./sw.js": "./node_modules/moment/locale/sw.js",
-	"./ta": "./node_modules/moment/locale/ta.js",
-	"./ta.js": "./node_modules/moment/locale/ta.js",
-	"./te": "./node_modules/moment/locale/te.js",
-	"./te.js": "./node_modules/moment/locale/te.js",
-	"./tet": "./node_modules/moment/locale/tet.js",
-	"./tet.js": "./node_modules/moment/locale/tet.js",
-	"./tg": "./node_modules/moment/locale/tg.js",
-	"./tg.js": "./node_modules/moment/locale/tg.js",
-	"./th": "./node_modules/moment/locale/th.js",
-	"./th.js": "./node_modules/moment/locale/th.js",
-	"./tk": "./node_modules/moment/locale/tk.js",
-	"./tk.js": "./node_modules/moment/locale/tk.js",
-	"./tl-ph": "./node_modules/moment/locale/tl-ph.js",
-	"./tl-ph.js": "./node_modules/moment/locale/tl-ph.js",
-	"./tlh": "./node_modules/moment/locale/tlh.js",
-	"./tlh.js": "./node_modules/moment/locale/tlh.js",
-	"./tr": "./node_modules/moment/locale/tr.js",
-	"./tr.js": "./node_modules/moment/locale/tr.js",
-	"./tzl": "./node_modules/moment/locale/tzl.js",
-	"./tzl.js": "./node_modules/moment/locale/tzl.js",
-	"./tzm": "./node_modules/moment/locale/tzm.js",
-	"./tzm-latn": "./node_modules/moment/locale/tzm-latn.js",
-	"./tzm-latn.js": "./node_modules/moment/locale/tzm-latn.js",
-	"./tzm.js": "./node_modules/moment/locale/tzm.js",
-	"./ug-cn": "./node_modules/moment/locale/ug-cn.js",
-	"./ug-cn.js": "./node_modules/moment/locale/ug-cn.js",
-	"./uk": "./node_modules/moment/locale/uk.js",
-	"./uk.js": "./node_modules/moment/locale/uk.js",
-	"./ur": "./node_modules/moment/locale/ur.js",
-	"./ur.js": "./node_modules/moment/locale/ur.js",
-	"./uz": "./node_modules/moment/locale/uz.js",
-	"./uz-latn": "./node_modules/moment/locale/uz-latn.js",
-	"./uz-latn.js": "./node_modules/moment/locale/uz-latn.js",
-	"./uz.js": "./node_modules/moment/locale/uz.js",
-	"./vi": "./node_modules/moment/locale/vi.js",
-	"./vi.js": "./node_modules/moment/locale/vi.js",
-	"./x-pseudo": "./node_modules/moment/locale/x-pseudo.js",
-	"./x-pseudo.js": "./node_modules/moment/locale/x-pseudo.js",
-	"./yo": "./node_modules/moment/locale/yo.js",
-	"./yo.js": "./node_modules/moment/locale/yo.js",
-	"./zh-cn": "./node_modules/moment/locale/zh-cn.js",
-	"./zh-cn.js": "./node_modules/moment/locale/zh-cn.js",
-	"./zh-hk": "./node_modules/moment/locale/zh-hk.js",
-	"./zh-hk.js": "./node_modules/moment/locale/zh-hk.js",
-	"./zh-mo": "./node_modules/moment/locale/zh-mo.js",
-	"./zh-mo.js": "./node_modules/moment/locale/zh-mo.js",
-	"./zh-tw": "./node_modules/moment/locale/zh-tw.js",
-	"./zh-tw.js": "./node_modules/moment/locale/zh-tw.js"
-};
-
-
-function webpackContext(req) {
-	var id = webpackContextResolve(req);
-	return __webpack_require__(id);
-}
-function webpackContextResolve(req) {
-	if(!__webpack_require__.o(map, req)) {
-		var e = new Error("Cannot find module '" + req + "'");
-		e.code = 'MODULE_NOT_FOUND';
-		throw e;
-	}
-	return map[req];
-}
-webpackContext.keys = function webpackContextKeys() {
-	return Object.keys(map);
-};
-webpackContext.resolve = webpackContextResolve;
-module.exports = webpackContext;
-webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
-
 /***/ })
 
 }]);
+//# sourceMappingURL=../sourcemaps/src_Utilities_hooks_useTableTools_Components_TasksTables_js-src_Utilities_hooks_useTableTools-2a4615.c2cf8124d330eb4d466aaa20a0d083c5.js.map

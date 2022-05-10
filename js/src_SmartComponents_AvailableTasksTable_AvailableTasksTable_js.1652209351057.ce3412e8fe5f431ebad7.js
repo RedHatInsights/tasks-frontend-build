@@ -1,10 +1,10 @@
 "use strict";
-(self["webpackChunktasks_frontend"] = self["webpackChunktasks_frontend"] || []).push([["src_PresentationalComponents_AvailableTasksTable_AvailableTasksTable_js"],{
+(self["webpackChunktasks_frontend"] = self["webpackChunktasks_frontend"] || []).push([["src_SmartComponents_AvailableTasksTable_AvailableTasksTable_js"],{
 
-/***/ "./src/PresentationalComponents/AvailableTasksTable/AvailableTasksTable.js":
-/*!*********************************************************************************!*\
-  !*** ./src/PresentationalComponents/AvailableTasksTable/AvailableTasksTable.js ***!
-  \*********************************************************************************/
+/***/ "./src/SmartComponents/AvailableTasksTable/AvailableTasksTable.js":
+/*!************************************************************************!*\
+  !*** ./src/SmartComponents/AvailableTasksTable/AvailableTasksTable.js ***!
+  \************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -26,4 +26,4 @@ var AvailableTasksTable = function AvailableTasksTable() {
 /***/ })
 
 }]);
-//# sourceMappingURL=../sourcemaps/src_PresentationalComponents_AvailableTasksTable_AvailableTasksTable_js.cfa185157ce8c7640c8bb3bb1e858fc6.js.map
+//# sourceMappingURL=../sourcemaps/src_SmartComponents_AvailableTasksTable_AvailableTasksTable_js.74228f33f5a6dcf9a63cda95c6ef0ae0.js.map
