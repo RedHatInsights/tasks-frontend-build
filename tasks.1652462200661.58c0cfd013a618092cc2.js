@@ -121,7 +121,7 @@ __webpack_require__.d(exports, {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".1652209351057." + __webpack_require__.h() + ".js";
+/******/ 			return "js/" + chunkId + ".1652462200564." + __webpack_require__.h() + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -130,13 +130,13 @@ __webpack_require__.d(exports, {
 /******/ 		// This function allow to reference all chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "css/" + chunkId + "." + {"src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a":"40df9edd8ac1d58bc84e","TasksPage":"1611b5f2c8e850988bce","CompletedTaskDetails":"9c2bdf0831886aef09c7","src_SmartComponents_CompletedTasksTable_CompletedTasksTable_js-node_modules_redhat-cloud-serv-06c28c":"e69e553bff039cd01968"}[chunkId] + ".css";
+/******/ 			return "css/" + chunkId + "." + {"src_AppEntry_js-node_modules_redhat-cloud-services_frontend-components-notifications_Notifica-948f4a":"35e9be391421bd335f46","TasksPage":"1611b5f2c8e850988bce","CompletedTaskDetails":"9c2bdf0831886aef09c7","src_SmartComponents_CompletedTasksTable_CompletedTasksTable_js-node_modules_redhat-cloud-serv-06c28c":"e69e553bff039cd01968"}[chunkId] + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("ce3412e8fe5f431ebad7")
+/******/ 		__webpack_require__.h = () => ("58c0cfd013a618092cc2")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
