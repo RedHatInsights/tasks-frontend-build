@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunktasks_frontend=self.webpackChunktasks_frontend||[]).push([[728],{53728:(a,e,s)=>{s.r(e),s.d(e,{default:()=>l});var t=s(93264),n=s.n(t);const l=function(){return n().createElement("div",{"aria-label":"available-tasks"},"Available tasks")}}}]);
-//# sourceMappingURL=../sourcemaps/728.3ebea256e0eb444c4782a91927650588.js.map
