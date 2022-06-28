@@ -1,11 +1,11 @@
 {
     "tasks": {
         "entry": [
-            "/beta/apps/tasks/tasks.1656018590138.48375baf2fcc0a3b363e.js"
+            "/apps/tasks/tasks.1656419807900.733ddd3fd150b93b0117.js"
         ],
         "modules": [
-            "/beta/apps/tasks/js/715.1656018590055.48375baf2fcc0a3b363e.js",
-            "/beta/apps/tasks/css/715.662a8f2ed6977a3e6587.css"
+            "/apps/tasks/js/715.1656419807822.733ddd3fd150b93b0117.js",
+            "/apps/tasks/css/715.662a8f2ed6977a3e6587.css"
         ]
     }
 }
