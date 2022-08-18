@@ -1,14 +1,14 @@
 {
   "app_name": "tasks",
   "node_version": ">=16.0.0",
-  "src_hash": "1bb4928e48f7c950b2798f48317c54be6c910a85",
+  "src_hash": "05fd9e51092458d17c553cafbdcb60a717719fcb",
   "src_tag": "",
   "src_branch": "master",
   "patternfly_dependencies": ["@patternfly/react-core@4.202.16","@patternfly/react-icons@4.53.16","@patternfly/react-table@4.71.16"],
   "rh_cloud_services_dependencies": ["@redhat-cloud-services/frontend-components-notifications@3.2.5","@redhat-cloud-services/frontend-components-utilities@3.2.14","@redhat-cloud-services/frontend-components@3.8.7"],
   "travis": {
     "event_type": "push",
-    "build_number": "143",
-    "build_web_url": "https://app.travis-ci.com/RedHatInsights/tasks-frontend/builds/254577516"
+    "build_number": "144",
+    "build_web_url": "https://app.travis-ci.com/RedHatInsights/tasks-frontend/builds/254577969"
   }
 }
