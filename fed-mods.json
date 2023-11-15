@@ -1,10 +1,10 @@
 {
     "tasks": {
         "entry": [
-            "/apps/tasks/tasks.bdb7d483a3cd11986605.js"
+            "/apps/tasks/tasks.f88d434666d4d27acf79.js"
         ],
         "modules": [
-            "/apps/tasks/js/43.bdb7d483a3cd11986605.js",
+            "/apps/tasks/js/43.f88d434666d4d27acf79.js",
             "/apps/tasks/css/43.a679ef4db1ddacf17177.css"
         ]
     }
