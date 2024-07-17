@@ -1,10 +1,10 @@
 {
     "tasks": {
         "entry": [
-            "/beta/apps/tasks/tasks.01c9acb37c5124ad2108.js"
+            "/beta/apps/tasks/tasks.1dc4282e18f927aa4753.js"
         ],
         "modules": [
-            "/beta/apps/tasks/js/303.01c9acb37c5124ad2108.js",
+            "/beta/apps/tasks/js/303.1dc4282e18f927aa4753.js",
             "/beta/apps/tasks/css/303.8de09ef84c90add8e540.css"
         ]
     }
