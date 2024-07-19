@@ -1,11 +1,1 @@
-{
-    "tasks": {
-        "entry": [
-            "/beta/apps/tasks/tasks.119ad46172b2e6f3beae.js"
-        ],
-        "modules": [
-            "/beta/apps/tasks/js/303.119ad46172b2e6f3beae.js",
-            "/beta/apps/tasks/css/303.8de09ef84c90add8e540.css"
-        ]
-    }
-}
+{"name":"tasks","version":"1.0.0","extensions":[],"registrationMethod":"callback","baseURL":"/beta/apps/tasks/","loadScripts":["tasks.7860bea03acc0885f371.js"],"buildHash":"51113ead95484c5b69e087ed9d5b31ab"}

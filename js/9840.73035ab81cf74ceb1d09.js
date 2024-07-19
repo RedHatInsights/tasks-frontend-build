@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktasks=self.webpackChunktasks||[]).push([[9840],{77459:(s,t,c)=>{c.r(t),c.d(t,{EllipsisVIcon:()=>l,EllipsisVIconConfig:()=>i,default:()=>a});var e=c(68419);const i={name:"EllipsisVIcon",height:512,width:192,svgPath:"M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z",yOffset:0,xOffset:0},l=(0,e.w)(i),a=l}}]);
+//# sourceMappingURL=../sourcemaps/9840.b1f9ddab5d7582f0987361643b340eed.js.map
